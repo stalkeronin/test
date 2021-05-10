@@ -32,6 +32,7 @@ def save_file(items, path):
 
 def parse():
     html = get_html(URL)
+    html.status_code
     if html.status_code == 200:
         cars = []
         pages_count = get_pages_count(html.text)
